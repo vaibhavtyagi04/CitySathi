@@ -1,0 +1,84 @@
+.navbar {
+  display: flex;
+  justify-content: space-between; /* left - center - right */
+  align-items: center;
+  padding: 16px 40px;
+  background: linear-gradient(135deg, #969f9f, #667172);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Left logo */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  color: #98e1b8;
+}
+
+/* Center links */
+.links {
+  display: flex;
+  gap: 40px; /* spacing */
+  justify-content: center;
+  flex: 1;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;  /* bigger font */
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* underline animation */
+.links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 3px;
+  background: #5cddb9;
+  transition: width 0.3s ease;
+}
+
+.links a:hover {
+  color: #5bbaab;
+  transform: translateY(-3px);
+}
+
+.links a:hover::after {
+  width: 100%;
+}
+
+/* Right Profile Button */
+.profile-btn {
+  background: linear-gradient(135deg, #c5c3b3, #97acae);
+  padding: 10px 20px;
+  border-radius: 50px;   /* pill shape */
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.profile-btn:hover {
+  background: linear-gradient(135deg, #648586, #46607b);
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+
