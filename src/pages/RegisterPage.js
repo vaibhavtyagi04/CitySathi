@@ -15,6 +15,7 @@ const RegisterPage = () => {
     state: "",
     district: "",
     city: "",
+    state: "",
     address: "",
     phone: "",
   });
